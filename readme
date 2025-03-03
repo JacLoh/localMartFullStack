@@ -1,3 +1,4 @@
+#NOTE: REMOVED SQL PASSWORD AND JWT_SECRET KEY FOR SECURITY IN .ENV
 ---backend using Express.js + Node.js + MySQL---
  config/ 
  controllers #logic
