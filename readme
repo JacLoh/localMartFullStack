@@ -1,0 +1,32 @@
+│── backend/ # Express + Node.js + MySQL
+│ ├── config/ # Database configuration
+│ ├── controllers/ # Business logic
+│ ├── middleware/ # Authentication middleware
+│ ├── models/ # Database schema (SQL)
+│ ├── routes/ # API endpoints
+│ ├── server.js # Express entry point
+│ ├── package.json # Backend dependencies
+│
+│── frontend/ # React Frontend
+│ ├── src/
+│ │ ├── components/ # Reusable UI elements
+│ │ ├── pages/ # Pages (Login, Register, etc.)
+│ │ ├── App.js # Main React component
+│ │ ├── api.js # API setup for Axios
+│ │ ├── index.js # React entry point
+│ ├── public/
+│ ├── package.json # Frontend dependencies
+│
+│── .gitignore
+│── README.md
+
+backend/
+config/db.js - connects to MySQL, using .env file to store the credentials like username and pw.
+backend/server.js - configures the middleware, loads API routes and starts the server.
+routes/authRoutes.js - define API endpoints to controller for user registration and login using password hashing and generate jwt token.
+routes/productRoutes.js - add and fetch products.
+middleware/auth.js - does the authentication, protecting routes and verifying the jwt tokens.
+models/userModel.js - define user table structure in MySQL (name, email, pw)
+models/productModel.js - defines the Products Table in MySQL (name, price, description, categroy, image url, user id)
+controllers/ authController.js - authentication logic for registration, login, pw hashing and token generation.
+controllers/ productController.js - add, fetch products.
