@@ -1,24 +1,23 @@
-│── backend/ # Express + Node.js + MySQL
-│ ├── config/ # Database configuration
-│ ├── controllers/ # Business logic
-│ ├── middleware/ # Authentication middleware
-│ ├── models/ # Database schema (SQL)
-│ ├── routes/ # API endpoints
-│ ├── server.js # Express entry point
-│ ├── package.json # Backend dependencies
-│
-│── frontend/ # React Frontend
-│ ├── src/
-│ │ ├── components/ # Reusable UI elements
-│ │ ├── pages/ # Pages (Login, Register, etc.)
-│ │ ├── App.js # Main React component
-│ │ ├── api.js # API setup for Axios
-│ │ ├── index.js # React entry point
-│ ├── public/
-│ ├── package.json # Frontend dependencies
-│
-│── .gitignore
-│── README.md
+---backend using Express.js + Node.js + MySQL---
+ config/ 
+ controllers #logic
+ middleware/ #Authentication middleware
+ models/ #Database schema
+ routes/ #API endpoints
+ server.js 
+ package.json 
+---frontend using React.js---
+ src/
+   components/
+   pages/ # Pages (Login, Register, etc.)
+   App.js 
+   api.js # API setup for Axios
+   index.js
+   public/
+   package.json 
+
+ .gitignore
+ README.md
 
 backend/
 config/db.js - connects to MySQL, using .env file to store the credentials like username and pw.
